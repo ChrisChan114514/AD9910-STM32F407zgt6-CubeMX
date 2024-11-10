@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"ad9910try\startup_stm32f407xx.o"
+"ad9910try\main.o"
+"ad9910try\gpio.o"
+"ad9910try\stm32f4xx_it.o"
+"ad9910try\stm32f4xx_hal_msp.o"
+"ad9910try\stm32f4xx_hal_tim.o"
+"ad9910try\stm32f4xx_hal_tim_ex.o"
+"ad9910try\stm32f4xx_hal_rcc.o"
+"ad9910try\stm32f4xx_hal_rcc_ex.o"
+"ad9910try\stm32f4xx_hal_flash.o"
+"ad9910try\stm32f4xx_hal_flash_ex.o"
+"ad9910try\stm32f4xx_hal_flash_ramfunc.o"
+"ad9910try\stm32f4xx_hal_gpio.o"
+"ad9910try\stm32f4xx_hal_dma_ex.o"
+"ad9910try\stm32f4xx_hal_dma.o"
+"ad9910try\stm32f4xx_hal_pwr.o"
+"ad9910try\stm32f4xx_hal_pwr_ex.o"
+"ad9910try\stm32f4xx_hal_cortex.o"
+"ad9910try\stm32f4xx_hal.o"
+"ad9910try\stm32f4xx_hal_exti.o"
+"ad9910try\system_stm32f4xx.o"
+"ad9910try\ad9910.o"
+--strict --scatter "AD9910TRY\AD9910TRY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AD9910TRY.map" -o AD9910TRY\AD9910TRY.axf
